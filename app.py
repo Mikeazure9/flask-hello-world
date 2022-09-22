@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect
 app = Flask(__name__)
 
 
@@ -6,7 +6,6 @@ app = Flask(__name__)
 def hello_world():
     return render_template('index.html')
 
-@app.route('/home')
-def read():
-    if not name and password:
-        return redirect('/')
+@app.route('signup')
+def signup():
+    return render_template('index.html')
