@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+
+{% block body %}
+
+
+<ul class="names">
+    {% for name in in names %}
+    <li>{{ name }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock body %}
